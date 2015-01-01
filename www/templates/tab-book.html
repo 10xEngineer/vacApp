@@ -1,0 +1,12 @@
+<!--
+  This template loads for the 'tab.appointment-detail' state (app.js)
+  'appointment' is a $scope variable created in the AppointmentsCtrl controller (controllers.js)
+  The AppointmentsCtrl pulls data from the Appointments service (service.js)
+  The Appointments service returns an array of appointment data
+-->
+<ion-view view-title="Book">
+  <ion-content class="padding">
+    <div ng-model="eventSources" ui-calendar="uiConfig.calendar" calendar="mainCalendar"></div>
+  </ion-content>
+</ion-view>
+

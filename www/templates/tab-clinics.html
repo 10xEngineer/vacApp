@@ -1,0 +1,10 @@
+<ion-view view-title="Clinics">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="clinic in clinics" type="item-text-wrap" href="#/tab/clinics/{{clinic.id}}">
+        <img ng-src="{{clinic.logo}}">
+        <h2>{{clinic.name}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

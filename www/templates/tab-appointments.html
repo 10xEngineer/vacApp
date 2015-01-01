@@ -1,0 +1,19 @@
+<!--link rel="stylesheet" href="bower_components/fullcalendar/fullcalendar.css"/>
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+<script type="text/javascript" src="bower_components/fullcalendar/fullcalendar.js"></script>
+<script type="text/javascript" src="bower_components/fullcalendar/gcal.js"></script>
+<script type="text/javascript" src="bower_components/moment/moment.js"></script-->
+
+<ion-view view-title="Appointments">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="appointment in appointments" type="item-text-wrap" href="#/tab/appointments/{{appointment.id}}">
+        <h2>{{appointment.date}}</h2>
+        <h3>{{appointment.clinic}}</h3>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

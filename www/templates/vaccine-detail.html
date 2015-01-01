@@ -1,0 +1,15 @@
+<!--
+This template loads for the 'tab.vaccine-detail' state (app.js)
+'vaccine' is a $scope variable created in the VaccinesCtrl controller (controllers.js)
+The VaccinesCtrl pulls data from the Vaccines service (service.js)
+The Vaccines service returns an array of vaccine data
+-->
+<ion-view view-title="{{vaccine.name}}">
+  <ion-content class="padding">
+    <img ng-src="{{vaccine.logo}}" style="width: 64px; height: 64px">
+    <h3>Notes</h3>
+    <p>
+      {{vaccine.notes}}
+    </p>
+  </ion-content>
+</ion-view>

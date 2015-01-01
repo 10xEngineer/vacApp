@@ -1,0 +1,39 @@
+<!--
+  This template loads for the 'tab.clinic-detail' state (app.js)
+  'clinic' is a $scope variable created in the ClinicsCtrl controller (controllers.js)
+  The ClinicsCtrl pulls data from the Clinics service (service.js)
+  The Clinics service returns an array of clinic data
+-->
+<ion-view view-title="{{clinic.name}}">
+  <ion-content class="padding">
+    <div class="list card">
+	    <img ng-src="{{clinic.logo}}" style="width: 100px; height: 100px">
+	    <p>
+	      {{clinic.description}}
+	    </p>
+	    <p>
+		  <h4>Treatments available</h4>
+		    <ul><li ng-repeat="treatment in clinic.treatments track by $index">{{treatment}}&nbsp;</li></ul>
+	    </p>
+	    <p>
+		  <img ng-src="img/map.png" style="width: 80%; height: 200px">
+		</p>
+
+		<div class="item tabs tabs-secondary tabs-icon-left">
+		  <a class="tab-item" href="#">
+		    <i class="icon ion-thumbsup"></i>
+		    Like
+		  </a>
+		  <a class="tab-item" href="#/tab/clinics/{{clinic.id}}/book">
+		    <i class="icon ion-plus-circled"></i>
+		    Book
+		  </a>
+		  <a class="tab-item" href="#">
+		    <i class="icon ion-share"></i>
+		    Share
+		  </a>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
+

@@ -1,0 +1,12 @@
+<ion-view view-title="Vaccines">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar item-icon-right" ng-repeat="vaccine in vaccines" type="item-text-wrap" href="#/tab/vaccine/{{vaccine.id}}">
+        <img ng-src="{{vaccine.logo}}">
+        <h2>{{vaccine.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
